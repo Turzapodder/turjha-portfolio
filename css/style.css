@@ -126,7 +126,7 @@ header .nav-menu ul li:hover{
 .marquee {
   display: flex;
   overflow: hidden;
-  height: 10vh;
+  height: 70px;
   user-select: none;
   gap: 2rem;
   background-color: #d5f60c;
@@ -134,7 +134,7 @@ header .nav-menu ul li:hover{
 .marquee2 {
   display: flex;
   overflow: hidden;
-  height: 10vh;
+  height: 70px;
   user-select: none;
   gap: 2rem;
   /*background-color: #d5f60c;*/
@@ -162,7 +162,7 @@ header .nav-menu ul li:hover{
 
 .marquee__group span {
   color: black;
-  font-size: 3vw;
+  font-size: 3rem;
   font-weight: 800;
   white-space: nowrap;
 
@@ -179,7 +179,7 @@ header .nav-menu ul li:hover{
 
 .marquee__group2 span {
   color: #d5f60c;
-  font-size: 3vw;
+  font-size: 3rem;
   font-weight: 800;
   white-space: nowrap;
   font-family: 'Abril Fatface', cursive !important;
