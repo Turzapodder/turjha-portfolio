@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@font-face{
+	font-family: 'Twister';
+	src: url(../fonts/Twister.ttf);
+}
 *{
 	margin: 0;
 	padding: 0;
@@ -28,9 +32,13 @@ header .nav-menu ul{
 }
 header .nav-menu ul li{
 	margin: 0px 20px;
-	color: white;
 }
-header .nav-menu ul li:hover{
+header .nav-menu ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+header .nav-menu ul li a:hover{
 	color: #d5f60c;
 }
 .contact-me{
@@ -41,6 +49,9 @@ header .nav-menu ul li:hover{
  .contact-me a{
 	text-decoration: none;
 	color: white;
+	font-size: 20px;
+
+
 }
 .contact-me:hover{
 	border: 1px solid transparent;
@@ -163,8 +174,9 @@ header .nav-menu ul li:hover{
 .marquee__group span {
   color: black;
   font-size: 3rem;
-  font-weight: 800;
+  font-weight: bold;
   white-space: nowrap;
+  font-family: 'Orbitron', sans-serif !important;
 
 }
 .marquee__group2 {
@@ -180,9 +192,9 @@ header .nav-menu ul li:hover{
 .marquee__group2 span {
   color: #d5f60c;
   font-size: 3rem;
-  font-weight: 800;
+  font-weight: bold;
   white-space: nowrap;
-  font-family: 'Abril Fatface', cursive !important;
+  font-family: 'Orbitron', sans-serif !important;
 }
 
 @keyframes scroll {
@@ -396,4 +408,55 @@ footer .footer-nav-icon ul li{
 footer .footer-nav-icon li i{
 	color: white;
 	font-size: 18px;
+}
+.hero-section{
+	margin-top: 50px;
+
+}
+.hero-section .hero-items{
+	display: flex;
+	justify-content: space-around;
+	align-items:  center;
+	background-color: #d5f60c;
+	height: 600px; 
+	font-size: 2rem;
+	border-radius: 10px;
+}
+.hero-section .hero-items .hero-title{
+	width: 40%;
+
+}
+.hero-section .hero-items .hero-title h1 span{
+	font-family: "Twister";
+	color: #0b76ff;
+}
+.hero-section .hero-items .hero-img {
+	width: 40%;
+	border-radius: 30px;
+	overflow: hidden;
+	height: 500px;
+}
+.hero-section .hero-items .hero-img img{
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.index-section{
+	margin-top: 50px;
+}
+.index-section .index-div{
+	padding: 50px;
+	height: 600px;
+	background-image: url("../img/2.png");
+	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+}
+.index-section .index-div a{
+	text-decoration: none;
+}
+.index-section .index-div h1{
+	color: white;
+	font-size: 55px;
 }
