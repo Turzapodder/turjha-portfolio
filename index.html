@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
 </head>
-<body>
+<body id="blur">
 	<div class="container">
 		<header>
 			<div class="logo">
@@ -20,16 +20,23 @@
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about-me.html">About Me</a></li>
 					<li><a href="about-me.html">Projects</a></li>
-					<li><a href="about-me.html">Blog</a></li>
+					b
 					<li><a href="about-me.html">Contact</a></li>
 				</ul>
 			</div>
 			<div class="contact-me">
-				<a href="">Contact Me</a>
+				<a href="C:\Users\Tur Za\Desktop\Portfolio\files\Turjha_Podder_Resume_11-07-2023-14-25-18.pdf" download="Turjha-cv.pdf">Download CV</a>
 			</div>
 		</header>
 	</div>
-	
+
+	<div id="popup">
+        <h2>Maintenece Ongoing!</h2>
+        <p>Hello There! First of all thank you for visiting my website. Currently, it is being developed. So there are some bugs and unfinished work. For a time being Please Download my cv to know about me</p>
+         <a href="C:\Users\Tur Za\Desktop\Portfolio\files\Turjha_Podder_Resume_11-07-2023-14-25-18.pdf" download="Turjha-cv.pdf">Download CV</a>
+        <a href="#" onclick="toggle()">Close</a>
+    </div>
+    
 	<section class="jumbotron-section">
 		<div class="container">
 			<div class="backdrop">
@@ -255,6 +262,17 @@
 	<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
     <!-- JavaScript -->
+    <script>
+        function toggle() {
+            var blur=document.getElementById('blur');
+            blur.classList.toggle('active');
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+        window.addEventListener('load', function() {
+	      toggle();
+	    });
+    </script>
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -14,6 +14,7 @@ body{
 	background-color: black;
 }
 header{
+
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -460,3 +461,49 @@ footer .footer-nav-icon li i{
 	color: white;
 	font-size: 55px;
 }
+#popup {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    background: #d5f60c;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 99999;
+}
+
+#popup.active {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+ }
+ #popup h2{
+ 	text-align: center;
+ 	color: black;
+ 	font-family: 'Orbitron', sans-serif !important;
+ 	margin-bottom: 30px;
+ }
+ #popup p{
+ 	text-align: center;
+ 	line-height: 2rem;
+ 	font-family: 'Orbitron', sans-serif !important;
+ }
+  #popup p b{
+  	font-family: 'Orbitron', sans-serif !important;
+  	font-size: 20px;
+  }
+  #popup a{
+  	display: block;
+  	text-align: center;
+  	margin-top: 30px;
+  	font-family: 'Orbitron', sans-serif !important;
+  	text-decoration: none;
+  	border: 1px solid black;
+  	padding: 5px 10px;
+  	color: #d5f60c;
+  	background-color: black;
+  }
